@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-site';
+  title: string = 'angular-site'; //sort of like props -> sending title into app.component.html
 }
