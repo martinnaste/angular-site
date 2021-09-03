@@ -6,7 +6,8 @@ import { SphereComponent } from './components/sphere/sphere.component';
 const routes: Routes = [
   {path: 'piechart', component: PiechartComponent},
   {path: 'sphere', component: SphereComponent},
-  { path: '',   redirectTo: '/piechart', pathMatch: 'full' }
+  { path: '',   redirectTo: '/piechart', pathMatch: 'full' },
+  { path: '**', redirectTo: '/piechart'}
 ];
 
 @NgModule({

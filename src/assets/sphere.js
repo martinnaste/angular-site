@@ -1,3 +1,5 @@
+//copied from fiddle i was given https://jsfiddle.net/pj5qx081/29/
+
 var renderer, scene, camera, controls;
 
 // init();
@@ -52,7 +54,7 @@ function init() {
   var sphereGeo = new THREE.SphereGeometry( 4 );
   const sphereMat = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
   const sphere = new THREE.Mesh( sphereGeo, sphereMat )
-  sphere.translateZ(4.0)
+  sphere.translateZ(4.0);
   /* sphere.position.set(0, 0, 4); */
   scene.add( sphere );
 	/* var thing = getCenterPoint(sphere)

@@ -70,16 +70,17 @@ export class SphereComponent implements AfterViewInit {
     
     var sphereGeo = new THREE.SphereGeometry( 4 );
     // const sphereMat = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
-    const sphere = new THREE.Mesh( sphereGeo, material )
-    sphere.translateZ(4.0)
+    const sphere = new THREE.Mesh( sphereGeo, material );
+    sphere.translateZ(4.0);
     /* sphere.position.set(0, 0, 4); */
     this.scene.add( sphere );
     // var center = getCenterPoint(sphere)
     // console.log('center', center);
-    this.animate()
+    this.animate();
   }
   animate() {
     //had to make a reference to this component and then call the animate function in itself
+    //it works but im not sure if this is correct
     const sphere: SphereComponent = this;
     (function animate() {
       requestAnimationFrame(animate);
